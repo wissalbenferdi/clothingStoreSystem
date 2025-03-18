@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing store system</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+   
+    
+
+</head>
+<body>
+    <!--header section begins-->
+    <header class="header">
+        <a href="#" class="logo"> <span>Old</span> But G<span>old</span>.</a>
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#products">products</a>
+            <a href="#cart">Cart summary</a>
+            <a href="#checkout">checkout</a>
+        </nav>
+        <div class="icons">
+            
+            <div class="fas fa-shopping-cart" id="cart-btn" onclick="scrollToCart()"></div>
+            <div class="fas fa-bars" id="menu-btn"></div>
+        </div>
+        
+    </header>    
+    <!--header section ends-->
+    
+
+
+
+
+
+
+
+    <!--home section begins-->
+    <section class="home" id="#home">
+        <!--filtring-->
+
+        <div class="sorting-container">
+            <label for="category">Category:</label>
+            <select id="category">
+
+                <option value="all">All</option>
+                <option value="costume ">Skirts</option>
+                <option value="shoes">Dresses</option>
+                <option value="shoes">Tops</option>
+                <option value="shoes">Shoes</option>
+
+
+            </select>
+
+            <label for="price">Price:</label>
+            <select id="price">
+                <option value="default" selected>Default</option>
+                <option value="low-high">Low to High</option>
+                <option value="high-low">High to Low</option>
+            </select>
+            <label for="price">Size:</label>
+            <select id="price">
+                <option value="default" selected>Default</option>
+                <option value="low-high">L</option>
+                <option value="high-low">M</option>
+                <option value="high-low">XL</option>
+                
+            </select>
+
+        
+        </div>
+    
+        <div class="content">
+            <h3>Vintage clothes</h3>
+            <p>Give your today yesterday's style!</p>
+        </div>
+
+    </section>
+<!--home section ends-->
+<!--products section begins-->
+<section class="products" id="products">
+    <h1 class="heading">Our <span>products</span></h1>
+    <div class="box-container">
+        <div class="box"  data-category="Skirts" data-price="60.99">
+            <div class="icons">
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-info-circle details-btn" data-product-id="1"></a>
+            </div>
+            <div class="image">
+                <img src="images/ariureskirt.JPG" alt="">
+            </div>
+            <div class="content">
+                <h3>Striped skirt</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">$60.99 <span>$72.00</span></div>
+            
+            </div>
+
+        </div>
+
+    
+
+    <div class="box"  data-category="Skirts" data-size="L" data-price="49.99">
+        <div class="icons">
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-info-circle details-btn" data-product-id="1"></a>
+
+        </div>
+        <div class="image">
+            <img src="images/grayskirtwithpockets.JPG" alt="">
+        </div>
+        <div class="content">
+            <h3>skirt with pockets</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price">$49.99 <span>$60.99</span></div>
+        
+        </div>
+
+    </div>
+
+
+
+<div class="box"  data-category="Skirts" data-size="L" data-price="55.99">
+    <div class="icons">
+        <a href="#" class="fas fa-shopping-cart"></a>
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-info-circle details-btn" data-product-id="1"></a>
+    </div>
+    <div class="image">
+        <img src="images/longskirtgreen.JPG" alt="">
+    </div>
+    <div class="content">
+        <h3>long skirt</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+        <div class="price">$55.99 <span>$60.00</span></div>
+    
+    </div>
+
+</div>
+
+
+<div class="box"  data-category="Dresses" data-size="s" data-price="100.50">
+    <div class="icons">
+        <a href="#" class="fas fa-shopping-cart"></a>
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-info-circle details-btn" data-product-id="1"></a>
+
+    </div>
+    <div class="image">
+        <img src="images/whitedress.JPG" alt="">
+    </div>
+    <div class="content">
+        <h3>old dress</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+        <div class="price">$100.50<span>$110.00</span></div>
+    
+    </div>
+
+</div>
+
+
+<div class="box"  data-category="Dresses" data-size="XL" data-price="110.99">
+    <div class="icons">
+        <a href="#" class="fas fa-shopping-cart"></a>
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-info-circle details-btn" data-product-id="1"></a>
+
+    </div>
+    <div class="image">
+        <img src="images/boweddress.JPG" alt="">
+    </div>
+    <div class="content">
+        <h3>Bowed dress</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+        <div class="price">$110.99 <span>$130.00</span></div>
+    
+    </div>
+
+</div>
+
+
+<div class="box"  data-category="Dresses" data-size="M" data-price="110.00">
+    <div class="icons">
+        <a href="#" class="fas fa-shopping-cart"></a>
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-info-circle details-btn" data-product-id="1"></a>
+
+    </div>
+    <div class="image">
+        <img src="images/browndress.JPG" alt="">
+    </div>
+    <div class="content">
+        <h3>Brown dress</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+        <div class="price">$110.00    <span>  $120.00</span></div>
+    
+    </div>
+
+</div>
+
+
+<div class="box"  data-category="Tops" data-size="L" data-price="85.99">
+    <div class="icons">
+        <a href="#" class="fas fa-shopping-cart"></a>
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-info-circle details-btn" data-product-id="1"></a>
+
+    </div>
+    <div class="image">
+        <img src="images/blazer.JPG" alt="">
+    </div>
+    <div class="content">
+        <h3>Blazer</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+        <div class="price">$85.99 <span>$90.00</span></div>
+    
+    </div>
+
+</div>
+
+
+<div class="box"  data-category="Tops" data-size="L" data-price="50.99">
+    <div class="icons">
+        <a href="#" class="fas fa-shopping-cart"></a>
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-info-circle details-btn" data-product-id="1"></a>
+
+    </div>
+    <div class="image">
+        <img src="images/sweatervest.JPG" alt="">
+    </div>
+    <div class="content">
+        <h3>Sweater vest</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+        <div class="price">$50.99 <span>$60.00</span></div>
+    
+    </div>
+
+</div>
+
+
+<div class="box"  data-category="Tops" data-size="XL" data-price="55.99">
+    <div class="icons">
+        <a href="#" class="fas fa-shopping-cart"></a>
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-info-circle details-btn" data-product-id="1"></a>
+
+    </div>
+    <div class="image">
+        <img src="images/blouse.JPG" alt="">
+    </div>
+    <div class="content">
+        <h3>Blouse</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+        <div class="price">$55.99 <span>$60.00</span></div>
+    
+    </div>
+
+</div>
+
+
+<div class="box"  data-category="Shoes" data-size="S" data-price="100.55">
+    <div class="icons">
+        <a href="#" class="fas fa-shopping-cart"></a>
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-info-circle details-btn" data-product-id="1"></a>
+
+    </div>
+    <div class="image">
+        <img src="images/crossgreenshoes.jpg" alt="">
+    </div>
+    <div class="content">
+        <h3>cross shoes</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+        <div class="price">$100.55 <span>$120.00</span></div>
+    
+    </div>
+
+</div>
+
+
+<div class="box"  data-category="Shoes" data-size="S" data-price="99.00">
+    <div class="icons">
+        <a href="#" class="fas fa-shopping-cart"></a>
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-info-circle details-btn" data-product-id="1"></a>
+
+    </div>
+    <div class="image">
+        <img src="images/brownbuttonshoes.jpg" alt="">
+    </div>
+    <div class="content">
+        <h3>buttoned shoes</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+        <div class="price">$99.00 <span>$100.00</span></div>
+    
+    </div>
+
+</div>
+
+
+<div class="box">
+    <div class="icons"  data-category="shoes" data-size="s" data-price="90.99">
+        <a href="#" class="fas fa-shopping-cart"></a>
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-info-circle details-btn" data-product-id="1"></a>
+        
+    </div>
+    <div class="image">
+        <img src="images/brightacademis.jpg" alt="">
+    </div>
+    <div class="content">
+        <h3>academic shoes</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+        <div class="price">$90.99 <span>$100.00</span></div>
+    
+    </div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+
+
+<!--products section ends-->
+
+<!-- Product Details Section -->
+<section id="product-details" style="display: none;">
+    <h1 class="heading">Product <span>Details</span></h1>
+    <div class="details-container">
+        <img id="details-image" src="" alt="Product Image">
+        <div class="details-content">
+            <h3 id="details-title"></h3>
+            <p id="details-description">Select your preferences below:</p>
+            <div class="price">
+                Price: <span id="details-price"></span>
+            </div>
+            <div class="options">
+                <label for="size-select">Size:</label>
+                <select id="size-select">
+                    <option value="XS">XS</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+
+                <label for="color-select">Color:</label>
+                <select id="color-select">
+                    <option value="Red">Red</option>
+                    <option value="Blue">Blue</option>
+                    <option value="Green">Green</option>
+                </select>
+            </div>
+            <button id="add-to-cart-btn" class="btn">Add to Cart</button>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Cart section begins -->
+<section class="cart" id="cart">
+    <h1 class="heading"><span>Shopping</span> Cart</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Striped skirt</td>
+                <td>$50.99</td>
+                <td>1</td>
+                <td>$50.99</td>
+            </tr>
+            <tr>
+                <td>skirt with pockets</td>
+                <td>$49.99</td>
+                <td>2</td>
+                <td>$99.98</td>
+            </tr>
+            <!-- Add more rows for each item in the cart -->
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Total:</td>
+                <td>$150.97</td>
+            </tr>
+        </tfoot>
+    </table>
+</section>
+<!-- Cart section ends -->
+
+<!-- Checkout section begins -->
+<section class="checkout" id="checkout">
+    <h1 class="heading"><span>Checkout</span></h1>
+
+    <form action="">
+        <div class="inputBox">
+            <span>Full Name :</span>
+            <input type="text" placeholder="enter your name">
+        </div>
+        <div class="inputBox">
+            <span>Email :</span>
+            <input type="email" placeholder="enter your email">
+        </div>
+        <div class="inputBox">
+            <span>Address :</span>
+            <input type="text" placeholder="enter your address">
+        </div>
+        <div class="inputBox">
+            <span>City :</span>
+            <input type="text" placeholder="enter your city">
+        </div>
+        <div class="inputBox">
+            <span>Payment Method :</span>
+            <select>
+                <option value="credit_card">Credit Card</option>
+                <option value="paypal">PayPal</option>
+                <option value="cash_on_delivery">Cash on Delivery</option>
+            </select>
+        </div>
+        <input type="submit" value="Place Order" class="btn">
+    </form>
+</section>
+<!-- Checkout section ends -->
+  <!-- Footer section begins -->
+  <section class="footer">
+    <div class="share">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+        <a href="#" class="fab fa-pinterest"></a>
+    </div>
+
+    <div class="links">
+        <a href="#">home</a>
+        <a href="#">products</a>
+        <a href="#">cart</a>
+        <a href="#">checkout</a>
+    </div>
+
+    <div class="credit">created by <span> Alae Wissal Benferdi </span> | all rights reserved</div>
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,464 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&display=swap');
+:root{
+    --main-color:#d3ad7f;
+    --green:#c7ddb5;
+    --gn:#4b6043;
+    --border: .1rem solid rgba(255,255,255,.3);
+}
+*{
+    font-family: 'Caveat', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+html{
+    font-size: 80.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+html::-webkit-scrollbar-thumb{
+    background: #fff;
+    border-radius: 5rem;
+
+}
+body{
+    background:var(--gn);
+}
+section{
+    padding:2rem 7%;
+}
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .9rem 3rem;
+    font-size: 1.7rem;
+    color: #fff;
+    background: var(--main-color);
+    cursor: pointer;
+}
+.btn:hover{
+    letter-spacing: .2rem;
+
+}
+.header{
+    background: var(--gn);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+    border-bottom: var(--border);
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+
+}
+.header .logo{
+    font-size: 5rem;
+    color: #333;
+    font-weight: bolder;
+}
+.header .logo span{
+    color:var(--green);
+}
+.header .navbar a{
+    margin: 0 1rem;
+    font-size: 3rem;
+    color: #fff;
+}
+.header .navbar a:hover{
+    color: var(--main-color);
+    border-bottom: .1rem solid var(--main-color);
+    padding-bottom: .5rem;
+}
+.header .icons a{
+    color: #fff;
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+}
+.header .icons div:hover{
+    color: var(--main-color);
+}
+#menu-btn{
+    display: none;
+}
+
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(images/homepagebackgroud.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.home .content{
+    max-width: 60rem;
+}
+.home .content h3{
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: #fff;
+    align-items: center;
+}
+.home .content p{
+    font-size: 3rem;
+    font-weight: lighter;
+    color: #fff;
+    line-height: 1.8;
+    align-items: center;
+   
+
+}
+.products .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+    gap: 1.5rem;
+}
+.products .box-container .box{
+    text-align: center;
+    border: var(--border);
+    padding: 2rem;
+}
+.products .box-container .box .icons a{
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    border: var(--border);
+    color: #fff;
+    margin: .3rem;
+
+}
+.products .box-container .box .icons a:hover{
+   background: var(--main-color);
+}
+.products .box-container .box .image{
+    padding: 2.5rem 0;
+}
+.products .box-container .box .image img{
+    height: 25rem;
+}
+.products .box-container .box .content h3{
+    color: #fff;
+    font-size: 2.5rem;
+
+}
+.products .box-container .box .content .stars{
+    padding: 1.5rem;
+}
+.products .box-container .box .content .stars i{
+    font-size:1.7rem ;
+    color: var(--main-color);
+}
+.products .box-container .box .content .price{
+    color: #fff;
+    font-size: 2.5rem;
+}
+.products .box-container .box .content .price span{
+    text-decoration: line-through;
+    font-weight: lighter;
+    font-size: 1.5rem;
+}
+
+#product-details {
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.details-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#details-image {
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+.details-content {
+    max-width: 500px;
+    text-align: left;
+}
+
+.details-content .options label {
+    display: block;
+    margin-top: 10px;
+}
+
+.details-content .btn {
+    margin-top: 20px;
+}
+
+
+.sorting-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    margin-right:3%;
+    margin-left: auto;
+    text-align: center;
+    align-items: center;
+    margin-top: 20px;
+ }                                                                                     
+
+
+
+
+.cart {
+    padding: 2rem 9%;
+}
+
+.cart table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,0.1);
+    border-radius: 0.5rem;
+    margin: 1.5rem 0;
+}
+
+.cart th .cart td {
+    padding: 1.2rem;
+    text-align: left;
+    border-bottom: 0.1rem solid #eee;
+}
+
+.cart th {
+    background: #f7f7f7;
+}
+
+.cart tbody tr:hover {
+    background: #f9f9f9;
+}
+
+.cart tfoot td {
+    font-weight: bold;
+}
+
+/* Checkout Section Styling */
+.checkout {
+    padding: 2rem 9%;
+}
+
+.checkout form {
+    max-width: 60rem;
+    margin: 0 auto;
+    background: #fff;
+    padding: 2rem;
+    box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,0.1);
+    border-radius: 0.5rem;
+}
+
+.checkout .inputBox {
+    margin-bottom: 1.5rem;
+}
+
+.checkout .inputBox span {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #666;
+    font-size: 1.5rem;
+}
+
+.checkout .inputBox input,
+.checkout .inputBox select {
+    width: 100%;
+    padding: 1rem;
+    border: 0.1rem solid #eee;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.checkout .btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background:var(--main-color);
+    color: #fff;
+    padding: 1.2rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.checkout .btn:hover {
+    background:var(--gn);
+}
+
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.quantity-btn {
+    padding: 0.5rem 1rem;
+    background: #eee;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+
+.quantity-btn:hover {
+    background: #ddd;
+}
+
+.remove-item {
+    color: #ff4444;
+    cursor: pointer;
+}
+
+.remove-item:hover {
+    color: #cc0000;
+}
+
+/* Cart Empty State */
+.cart-empty {
+    text-align: center;
+    padding: 2rem;
+    color: #666;
+}
+.footer{
+    background: #333;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.footer .share{
+    padding: 1rem 0;
+}
+
+.footer .share a{
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color: #fff;
+    border: 0.1rem solid #fff;
+    margin: 0.3rem;
+    border-radius: 50%;
+}
+
+.footer .share a:hover{
+    background-color: #fff;
+    color: #333;
+}
+
+.footer .links{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    gap: 1rem;
+}
+
+.footer .links a{
+    padding: 0.7rem 2rem;
+    color: #fff;
+    border: 0.1rem solid #fff;
+    cursor: pointer;
+}
+
+.footer .links a:hover{
+    background: #fff;
+    color: #333;
+}
+
+.footer .credit{
+    padding: 1rem;
+    color: #fff;
+    font-size: 2rem;
+}
+
+.footer .credit span{
+    color:gold;
+}
+
+
+
+
+
+
+
+
+
+
+/*media queries*/
+@media(max-width:991px){
+    html{
+        font-size: 55%;
+    }
+    .header{
+        padding: 1.5rem 2rem;
+    }
+    section{
+        padding:2rem;
+    }
+}
+
+@media(max-width:768px){
+   #menu-btn{
+    display: inline-block;
+   }
+   .header .navbar{
+    position: absolute;
+    top: 100%; right: -100%;
+    background: #fff;
+    width: 30rem;
+    height: calc(100vh - 9.5rem);
+   }
+   .header .navbar .active{
+    right: 0;
+   }
+   .header .navbar a{
+    color: white;
+    display: block;
+    margin: 1.5rem;
+    padding: .5rem;
+    font-size: 2rem;
+   }
+   .header .search-form{
+    width: 90%;
+    right: 2rem;
+   }
+   .home{
+    background-position: left;
+    justify-content: center;
+    text-align: center;
+   }
+   .home .content h3{
+    font-size: 4.5rem;
+   }
+   .home .content p{
+    font-size: 1.5rem;
+   }
+}
+
+@media(max-width:450px){
+    html{
+        font-size: 50%;
+    }
+   
+}
